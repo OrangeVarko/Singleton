@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CLXUsageDemo.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    CLXUsageDemo *t = [CLXUsageDemo sharedInstance];
+    CLXUsageDemo *t1 = [[CLXUsageDemo alloc]init];
+    CLXUsageDemo *t3 = t1.copy;
+    if ([t isMemberOfClass:[CLXUsageDemo class]]) {
+        NSLog(@"dasf");
+    }
     return YES;
 }
 

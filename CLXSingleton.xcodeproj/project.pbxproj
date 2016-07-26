@@ -13,6 +13,8 @@
 		F11022451D47B227002F8C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11022431D47B227002F8C23 /* Main.storyboard */; };
 		F11022471D47B227002F8C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11022461D47B227002F8C23 /* Assets.xcassets */; };
 		F110224A1D47B227002F8C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11022481D47B227002F8C23 /* LaunchScreen.storyboard */; };
+		F11022531D47B268002F8C23 /* CLXBaseSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F11022521D47B268002F8C23 /* CLXBaseSingleton.m */; };
+		F11022561D47B6F6002F8C23 /* CLXUsageDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = F11022551D47B6F6002F8C23 /* CLXUsageDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		F11022461D47B227002F8C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F11022491D47B227002F8C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F110224B1D47B227002F8C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F11022511D47B268002F8C23 /* CLXBaseSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLXBaseSingleton.h; sourceTree = "<group>"; };
+		F11022521D47B268002F8C23 /* CLXBaseSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLXBaseSingleton.m; sourceTree = "<group>"; };
+		F11022541D47B6F6002F8C23 /* CLXUsageDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLXUsageDemo.h; path = ../CLXUsageDemo.h; sourceTree = "<group>"; };
+		F11022551D47B6F6002F8C23 /* CLXUsageDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLXUsageDemo.m; path = ../CLXUsageDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				F11022481D47B227002F8C23 /* LaunchScreen.storyboard */,
 				F110224B1D47B227002F8C23 /* Info.plist */,
 				F110223A1D47B227002F8C23 /* Supporting Files */,
+				F11022511D47B268002F8C23 /* CLXBaseSingleton.h */,
+				F11022521D47B268002F8C23 /* CLXBaseSingleton.m */,
+				F11022541D47B6F6002F8C23 /* CLXUsageDemo.h */,
+				F11022551D47B6F6002F8C23 /* CLXUsageDemo.m */,
 			);
 			path = CLXSingleton;
 			sourceTree = "<group>";
@@ -151,7 +161,9 @@
 			files = (
 				F11022421D47B227002F8C23 /* ViewController.m in Sources */,
 				F110223F1D47B227002F8C23 /* AppDelegate.m in Sources */,
+				F11022531D47B268002F8C23 /* CLXBaseSingleton.m in Sources */,
 				F110223C1D47B227002F8C23 /* main.m in Sources */,
+				F11022561D47B6F6002F8C23 /* CLXUsageDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
