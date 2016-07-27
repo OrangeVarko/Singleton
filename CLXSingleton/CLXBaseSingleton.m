@@ -8,7 +8,7 @@
 
 #import "CLXBaseSingleton.h"
 
-static id<SingletonRule> instance;
+static id<SingletonRule> instance = nil;
 @implementation CLXBaseSingleton
 + (instancetype)sharedInstance
 {
@@ -16,7 +16,10 @@ static id<SingletonRule> instance;
     dispatch_once(&onceToken, ^{
         if ([self conformsToProtocol:@protocol(SingletonRule) ]) {
             instance = [self alloc];
-            instance = [instance initSingleton];
+            if ([instance respondsToSelector:@selector(initSingleton)])
+            {
+              instance = [instance initSingleton];
+            }
         } else {
             NSAssert(NO, @"子类必须遵循并实现<SingletonRule>协议");
         }
